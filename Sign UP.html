@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./data/bootstrap.min.css">
+    <link rel="stylesheet" href="./data/all.min.css">
+    <link rel="stylesheet" href="./Login.css">
+    
+    <title>Sign Up</title>
+</head>
+
+<body> 
+
+<div class="container text-center  ">
+    <div class="mx-auto w-75 box my-5 p-5   ">
+        <h1 class="text-primary ">Smart Login System</h1>
+        <input class="form-control my-3 " type="text" name="name" id="name" placeholder="Enter Your name">
+        <p id="nameerror" class="d-none text-white m-0 ">Name must Start with capital Letter and between 1-20 Letters</p>
+        <p id="nameExistError" class="d-none text-white m-0 ">Name already Exist</p>
+        <input class="form-control my-3 " type="text" name="email" id="email" placeholder="Enter Your Email">
+        <p id="emailerror" class="d-none text-white m-0 ">Enter Valid Email</p>
+        <p id="emailExistError" class="d-none text-white m-0 ">Email already Exist</p>
+        <input  class="form-control  my-3 " type="password" name="password" id="password" placeholder="Enter Your password">
+        <p id="passerror" class="d-none text-white m-0 ">Enter a strong Password</p>
+        <p id="error" class="text-danger d-none my-1 ">All Inputs are Required</p>
+      <button id="signUpBtn" onclick="signUp()" class="btn btn-outline-info  w-100 mx-auto my-3  ">Sign Up</button>
+      <p id="signUpSucces" class="text-success d-none">you have signed up Successfully </p>
+      <button id="signInBtn" class="btn btn-outline-success w-100 mx-auto my-3 disabled ">Sign IN</button>
+        <p class="text-danger " id="existErroe"></p>
+        <p class="text-white mt-2 ">You have an account? <a class="text-decoration-none text-white " href="./Login.html"> Signin</a></p>
+    </div>
+
+</div>
+   
+
+
+    <script src="./SignUp.js"></script>
+</body>
+
+</html>
